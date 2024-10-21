@@ -19,6 +19,7 @@ def start(num_envs,base_dir='./'):
         window = session.new_window(window_name=f"env{i}",attach=False)
         print(f"Создано окно tmux для окружений {i} в директории {env_dir}")
 
+    session.attach_session()
 
 def stop(env_id):
 
